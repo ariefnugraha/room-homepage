@@ -1,1 +1,159 @@
-@import url("https://fonts.google.com/specimen/Spartan");
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+body {
+  font: normal normal normal 12px/200% "Spartan", sans-serif;
+  margin: 0;
+}
+
+nav {
+  position: absolute;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 50px 80px;
+  z-index: 2;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav .brand {
+  font-size: 16px;
+}
+
+nav ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  padding: 0 20px;
+}
+
+nav ul li .link {
+  display: block;
+}
+
+nav ul li a:hover:after {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+  left: 100px;
+  bottom: 100px;
+}
+
+.hero .carousel {
+  position: relative;
+}
+
+.hero .carousel .owl-dots {
+  display: none;
+}
+
+.hero .carousel .owl-nav {
+  position: absolute;
+  width: 140px;
+  bottom: 0;
+  right: 400px;
+}
+
+.hero .carousel .owl-nav button {
+  background-color: #000000 !important;
+  border-radius: initial;
+  width: 70px;
+  height: 70px;
+  outline: none;
+}
+
+.hero .carousel .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.hero .carousel .item img {
+  width: 60%;
+}
+
+.hero .carousel .item .text {
+  width: 40%;
+  padding: 80px;
+}
+
+.hero .carousel .item .text h1 {
+  font: normal normal 700 30px "Spartan", sans-serif;
+}
+
+.hero .carousel .item .text p {
+  color: #a1a1a1;
+}
+
+.hero .carousel .item .text .link {
+  position: relative;
+  margin-top: 30px;
+}
+
+.hero .carousel .item .text .link a {
+  font: normal normal bold 12px/160% "Spartan", sans-serif;
+  letter-spacing: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hero .carousel .item .text .link a:after {
+  content: url("../images/icon-arrow.svg");
+  display: block;
+  position: absolute;
+  right: 150px;
+  top: 0;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.about img {
+  width: calc(30.74% - 60px);
+}
+
+.about .text {
+  width: 40%;
+  padding: 30px 50px;
+}
+
+.about .text .title {
+  font: normal normal bold 12px/160% "Spartan", sans-serif;
+  letter-spacing: 3px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.about .text .description {
+  color: #a1a1a1;
+}
