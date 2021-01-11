@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+body {
+  font: normal normal 500 12px/200% "Spartan", sans-serif;
+  margin: 0;
+}
+
+.scroll {
+  background-color: #000000 !important;
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 40px 80px;
+  z-index: 2;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav .brand {
+  width: 5%;
+  font-size: 16px;
+}
+
+nav .brand a {
+  font: normal normal 700 30px "Spartan", sans-serif;
+}
+
+nav ul {
+  width: 80%;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  /*
+      a:hover:after {
+        content: "";
+        width: 10px;
+        height: 5px;
+        background-color: $white;
+        display: block;
+        position: relative;
+        left: 100px;
+        bottom: 100px;
+      }
+      */
+}
+
+nav ul li a {
+  padding: 0 20px;
+}
+
+nav ul li .link {
+  display: block;
+}
+
+nav .menu-mobile {
+  display: none;
+}
+
+nav .menu-mobile button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.hero .carousel {
+  position: relative;
+}
+
+.hero .carousel .owl-dots {
+  display: none;
+}
+
+.hero .carousel .owl-nav {
+  position: absolute;
+  width: 140px;
+  bottom: 0;
+  right: 406px;
+}
+
+.hero .carousel .owl-nav button {
+  background-color: #000000 !important;
+  border-radius: initial;
+  width: 70px;
+  height: 70px;
+  outline: none;
+}
+
+.hero .carousel .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.hero .carousel .item img {
+  width: 60%;
+}
+
+.hero .carousel .item .text {
+  width: 40%;
+  padding: 80px;
+}
+
+.hero .carousel .item .text h1 {
+  font: normal normal 700 30px "Spartan", sans-serif;
+}
+
+.hero .carousel .item .text p {
+  color: #a1a1a1;
+}
+
+.hero .carousel .item .text .link {
+  position: relative;
+  margin-top: 30px;
+}
+
+.hero .carousel .item .text .link a {
+  font: normal normal 600 12px/160% "Spartan", sans-serif;
+  letter-spacing: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hero .carousel .item .text .link a:after {
+  content: url("../images/icon-arrow.svg");
+  display: block;
+  position: absolute;
+  right: 150px;
+  top: 0;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.about img {
+  width: calc(442px - 60px);
+}
+
+.about .text {
+  width: 40%;
+  padding: 30px 50px;
+}
+
+.about .text .title {
+  font: normal normal 600 12px/160% "Spartan", sans-serif;
+  letter-spacing: 3px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.about .text .description {
+  color: #a1a1a1;
+}
+
+@media (max-width: 320px) {
+  nav .brand a {
+    -webkit-transform: translate(50%, -10px) !important;
+            transform: translate(50%, -10px) !important;
+  }
+  .owl-nav {
+    bottom: 540px !important;
+  }
+  .hero .carousel .item .text .link a::after {
+    right: 30px !important;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  nav .brand a {
+    -webkit-transform: translate(50%, -10px) !important;
+            transform: translate(50%, -10px) !important;
+  }
+  .owl-nav {
+    bottom: 480px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  nav {
+    padding: 50px 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  nav .brand {
+    width: 80%;
+  }
+  nav .brand a {
+    position: absolute;
+    -webkit-transform: translate(58px, -10px);
+            transform: translate(58px, -10px);
+  }
+  nav ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: #000000;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    padding: 30px;
+    top: 124px;
+    left: -300px;
+    -webkit-transition: ease-in 0.5s;
+    transition: ease-in 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+  .menu-mobile {
+    display: block !important;
+    width: 20%;
+  }
+  .hero {
+    margin-bottom: 50px;
+  }
+  .hero .carousel .owl-nav {
+    bottom: 420px;
+    right: 0px !important;
+  }
+  .hero .carousel .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .hero .carousel .item img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero .carousel .item .text {
+    width: calc(100% - 80px);
+    padding: 50px 40px;
+  }
+  .hero .carousel .item .text .link a:after {
+    right: 120px;
+    top: 2px;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about .text {
+    width: calc(100% - 80px);
+    padding: 50px 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  nav .brand {
+    width: 12%;
+  }
+  nav ul {
+    width: 88%;
+    margin-top: 10px;
+  }
+  .hero .carousel .owl-nav {
+    right: 0px;
+  }
+  .hero .carousel .item img {
+    height: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero .carousel .item .text {
+    padding: 70px 40px;
+  }
+  .hero .carousel .item .text .link a:after {
+    right: 10px;
+    top: 2px;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about .text {
+    width: calc(100% - 80px);
+    padding: 50px 40px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
