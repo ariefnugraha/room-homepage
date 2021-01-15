@@ -1,5 +1,3 @@
-# Frontend Mentor - Room homepage
-
 ![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)
 
 <h1>Room Homepage Coding Challenge</h1>
@@ -19,4 +17,3 @@
     <li>Sass</li>
     <li>Owl Carousel</li>
 </ul>
-**Have fun building!** 🚀
