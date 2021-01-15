@@ -41,8 +41,8 @@ nav .brand a {
 
 nav ul {
   width: 80%;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
   -webkit-margin-after: 0;
           margin-block-end: 0;
   list-style: none;
@@ -94,7 +94,7 @@ nav .menu-mobile button {
   position: absolute;
   width: 140px;
   bottom: 0;
-  right: 406px;
+  right: 717px;
 }
 
 .hero .carousel .owl-nav button {

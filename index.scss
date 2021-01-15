@@ -43,7 +43,7 @@ nav {
 
   ul {
     width: 80%;
-    margin-block-start: 0;
+    margin-block-start: 10px;
     margin-block-end: 0;
     list-style: none;
     li {
@@ -94,7 +94,7 @@ nav {
       position: absolute;
       width: 140px;
       bottom: 0;
-      right: 406px;
+      right: 717px;
 
       button {
         background-color: $black !important;
