@@ -108,9 +108,17 @@ nav {
       display: flex;
       flex-flow: row nowrap;
 
-      img {
+      .image {
         width: 60%;
+        height: 600px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
+      
 
       .text {
         width: 40%;
@@ -152,7 +160,7 @@ nav {
   flex-flow: row wrap;
 
   img {
-    width: calc(442px - 60px);
+    width: calc(30.7% - 60px);
   }
 
   .text {
@@ -170,6 +178,15 @@ nav {
   }
 }
 
+.attribution {
+  background-color: $black;
+  color: $white;
+  padding: 20px 10px;
+  text-align: center;
+  a {
+    color: $white;
+  }
+}
 @media (max-width: 320px) {
     nav {
         .brand {
@@ -327,3 +344,44 @@ nav {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero .carousel .owl-nav {
+    right: 36%;
+    left: auto;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .hero .carousel .owl-nav {
+    right: 37%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .hero .carousel .owl-nav {
+    right: 37%;
+  }
+
+  .about img {
+    width: calc(30.6% - 60px);
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .hero .carousel .owl-nav {
+    right: 37.2%;
+  }
+  .about img {
+    width: calc(30.6% - 60px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero .carousel .owl-nav {
+    right: 37.7%;
+  }
+
+  .about img {
+    width: calc(30.5% - 60px);
+  }
+}
